@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Travel Planner Application</title>
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+      
+</head>
+<body >
+<header >
+  <div class="social-media">
+    <i class="fab fa-linkedin" id="linkedin"></i>
+    <i class="fab fa-github" id="gitHub"></i>
+    <i class="fab fa-facebook-f" id="facebook"></i>
+  </div>
+            <h1>Travel Planner App</h1>
+  </header>
+<div class="container">
+<main>
+<!--Call to action  button-->
+     <div class="action-buttons ">
+                <input type="submit" id="deleteBtn" class="deleteBtn" data-delete-btn value="Remove trip">
+              <input type="submit" class="getBtn" id="getBtn" data-get-btn value="See Trips Saved"> 
+     </div>
+<!--End of call to action button-->
+<section class="details-box" box>
+        <div class="image-box">
+                  <img class="city-image" data-city-image alt="">
+                  <p class="img-tag" data-img-tag></p>
+            </div>
+               <form class="form" id="input-Form" >
+                  <h2>Plan Your Next Trip</h2>
+                  <div class="form-input">
+                        <input type="text" name="input" class="form__input" id="place-Input"
+                           class="placeInput" data-place-name placeholder="Enter location" required />    
+                        </div>
+                          <div class="form-input">
+                              <label for="">Start date: </label>  
+                               <input type="date" name="input" class="form__input" id="dateOfDep"
+                                    class="dateOfDeparture" data-departure-date>
+                                <label for="">End Date:  </label>  
+                                 <input type="date" name="input" class="form__input" id="dateOfReturn"
+                                    class="dateOfReturn" data-return-date>
+                          </div>
+                              <div class="action-buttons">
+                                <input type="submit" name="submit-btn" id="submitBtn"
+                                    class="submitBtn" data-submit-btn value="Create trip"
+                                   >
+                        </div>
+                  </form>
+</section>
+<!--Website logo begin-->
+<section class="api-logs" data-section-api-logo>
+  <div class="api_logs">
+      <div class="api_logs-item" id="geonames-logo"></div>
+      <div class="api_logs-item" id="weatherbit-logo"></div>
+        <div class="api_log-item" id="pixabay-logo"></div>
+      <div class="api_log-item" id="restCountries-logo"></div>
+      <div class="api_log-item" id="udacity-logo"></div>
+</div>
+  <div id="api-text-backgr"><p id="api-logs-text">Featuring APIs </p></div>
+  </section> 
+<!--End of website logo--> 
+<!--Output session begin--> 
+<section class="infos" id="items" data-infos>
+          <div class="destination-info"> 
+            <h2>Trip Infos</h2>   
+              <div class="trip-info">             
+                <label for="Country Name">Destination Country: </label> 
+                  <div class="country-name" data-country-name> </div><br> 
+                    <label for="City Name">City Name: </label>
+                      <div class="city-name" data-city-name> </div><br>
+                        <label for="Departure date">Start date: </label> 
+                       <div class="departure-date" data-depart-date> </div><br>
+                     <label for="Return date:">End date: </label> 
+                  <div class="return-date" data-returndate> </div>
+          </div>
+  <div class="action-buttons">
+            <input type="submit" id="saveTrip" class="save-trip" value="Save Trip" data-save-trip>
+      </div>
+ </div>
+<!-- <div class="results">        -->
+<div class="weatherInfo" id="weather-info">
+      <div>
+        <h2>Weather Forecast: </h2> 
+            <label for="icon">Icon:  </label>
+             <div class="weatherIcon" data-weather-icon></div><br>
+              <label for="temperature">Temperature: </label>          
+                <div class="temp" data-temp> </div><br>
+                  <label for="humidity">humidity: </label>  
+                  <div class="humidity" data-humidity> </div><br>
+                  <label for="wind">Wind: </label>  
+                <div class="wind_sp" data-wind-speed> </div><br>
+            <label for="description">Description: </label>  
+        <div class="description" data-description> </div>         
+      </div> 
+ </div> 
+ <div class="days-counter-timer" >
+  <h2>Days Interval: </h2>
+  <label for="trip duration:">Duration: </label> 
+  <div class="trip-duration" data-trip-duration>:: </div><br>
+  <div class="rest-countries-info">
+    <h2>Important Infos: </h2>
+    <label for="demonym">Demonyn: </label>
+    <p id="demonym" class="rest-countries" data-demonym></p><br>
+    <label for="currency code">Curr. code:</label>
+    <p id="currencyCode" class="rest-countries" data-currency-code></p><br>
+    <label for="currency name">Curr. name:</label>
+    <p id="currencyName" class="rest-countries" data-currency-name></p><br>
+    <label for="currency symbol">Curr. symbol:</label>
+    <p id="currencySymbol" class="rest-countries" data-currency-symbol></p><br>
+  </div>
+ </div>
+</section>          
+<p id="getdata"></p>
+</main>
+      <input type="submit" id="printBtn" class="print-btn" value="Print Trip" data-print-trip name="print-trip">
+      <input type="submit" id="deleteBtn" class="deleteBtn" data-delete-btn value="Remove trip">
+      <div class="social-media1">
+        <i class="fab fa-linkedin" id="linkedin"></i>
+        <i class="fab fa-github" id="gitHub"></i>
+        <i class="fab fa-facebook" id="facebook"></i>
+      </div>
+</div>
+      <footer>
+            <div class="contentInfo">&copy; Emmanuel Nodolomwanyi App</div>
+      </footer>
+      <!-- <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+       </script> -->
+</body>
+</html>     
