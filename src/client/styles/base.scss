@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import  'config.scss', 'form.scss', 'header'; 
+
+body {
+     display: grid;
+     grid-template-rows: auto 1fr auto / auto 1fr auto;
+     font-weight: bolder;
+     font-size: 20px;
+     min-height: 100vh;
+     margin: 0;
+     padding: 0;
+     font-family: 'Poppins', sans-serif;
+     color: $tetiary-color;
+}
+
+
+.container {
+  grid-column: span 12;
+  margin: auto;
+  min-height: 100vh;
+  width: 100%;
+  justify-content: space-around;   
+
+
+h2 {
+     text-align: center;
+     color: rgb(241, 1, 1);
+}
+
+main {
+     display: grid;
+     min-height: 100vh;
+     color: $baseDefault;
+
+ }
+
+}
+
+.infos {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+     color: $default-color; 
+     margin: 1rem;
+     min-height: auto;
+     justify-content: space-around;
+
+    .infos, h2 {
+     text-align: center;
+     color: $secondary-color;
+    }
+    .infos, label {
+         color: $baseDefault;
+    }
+     .days-counter-timer{
+          background: linear-gradient(rgba(0, 38, 253, 0.864), rgba(0,36,250,0.8));
+          margin: 1rem;
+          padding: 1rem;
+          border-radius: 0.8rem;
+          box-shadow: 4px 4px 4px rgba(0,0,0,.2);
+     }
+      .destination-info  {
+          background: linear-gradient(rgba(0, 38, 253, 0.864), rgba(0,36,250,0.8));
+          margin: 1rem;
+          padding: 1rem;
+          border-radius: 0.8rem;
+          height: auto;
+          box-shadow: 4px 4px 4px rgba(0,0,0,.2);
+
+          .destination-info .h2 {
+          width: clamp(14ch, 20%, 6ch);
+        }
+      }
+
+      .weatherInfo {
+          background: linear-gradient(rgba(0, 38, 253, 0.864), rgba(0,36,250,0.8));
+          margin: 1rem;
+          padding: 1rem;
+          border-radius: 0.8rem;
+          box-shadow: 4px 4px 4px rgba(0,0,0,.2);
+          opacity: 5;
+      }
+ }
+ 
+.api_logs{
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     width: auto;
+     text-align: center;
+     margin: 1rem;
+     padding: 1rem;
+     font-size: 12px;
+
+     &-item {
+          text-align: center;
+     } 
+     #geonames-logo{
+          height: 100px;
+          width: 150px;
+          background: url('../media/websites-logo/geonames-logo.png') center;
+          background-size: cover;
+         
+     }
+     #weatherbit-logo{
+          background: url('../media/websites-logo/weatherbit-logo.png') center;
+          background-size: cover;
+          width: 160px;
+          min-height: 100px;
+          margin-left: 1rem;
+     }
+     #restCountries-logo {
+          background: url('../media/websites-logo/RESTCountries.png') center;
+          background-size: cover;
+          width: 150px;
+          height: 100px;
+     } 
+     #udacity-logo {
+          background: url('../media/websites-logo/Udacity_logo.png');
+          background-size: cover;
+          width: 250px;
+          height: 100px;
+     }
+}
+
+#api-text-backgr{
+     background: $primary-color;
+     
+}
+
+#api-logs-text {
+     position: relative;
+     font-size: 26px;
+     color: #fafafa;
+     animation: textMoves 5s, 8s linear;
+     text-align: center;
+}
+.social-media1 {
+     text-align: right;
+     margin: 1rem;
+     #linkedin{
+          color: $primary-color
+     }
+     #gitHub {
+          color: $baseDefault;
+     }
+     #facebook {
+          color: $primary-color;
+        
+     }  
+}
+
+.social-media1, i {
+     padding: 0.2rem;
+}
+
+footer {
+          font-weight: 600;
+          color: $default-color;
+          grid-column: span 12;
+          background: $primary-color;
+          text-align: center;
+          padding: 1rem;       
+}
+
+@keyframes textMoves {
+     from {left: 0px;}
+     to {left: 200px;}
+}
