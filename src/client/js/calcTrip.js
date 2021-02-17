@@ -3,7 +3,7 @@ const returnDate = document.querySelector('[data-return-date]');
 const placeName = document.querySelector('[data-place-name]');
 
 const duration = document.querySelector('[data-trip-duration]');
-duration.textContent = 0.0;
+
  
 const updateDaysCount = ()  => {
   //Get current date
@@ -22,6 +22,8 @@ const updateDaysCount = ()  => {
   let milisecondsInDay = 1000 * 3600 * 24;
 
   duration.innerHTML = 'You have'+ ' ' + diff/milisecondsInDay + ' '+' days left to your trip.';
+
+  duration.value = '';
 
     //Check if counterdown is elapse and clear interval 
     if(diff < 1){
