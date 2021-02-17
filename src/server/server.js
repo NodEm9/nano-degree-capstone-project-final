@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
-
+const bodyParser = require('body-parser');
+const compression = require('compression');
 
 const dotenv = require('dotenv');
 dotenv.config();
@@ -9,8 +10,7 @@ const path = require('path');
 
 const { default: fetch } = require('node-fetch');
 
-
-const bodyParser = require('body-parser');
+app.use(compression());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
