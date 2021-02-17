@@ -112,8 +112,8 @@ document.querySelector('[data-get-btn]').addEventListener('click', () => {
   localForage.getItem(key).then((inputText) => {
     console.log('getItem retrieved this', inputText);
     updateDisplay(inputText);  
-  });
-});     
+  });  
+});      
          
 //Iterate over all stored data
 document.querySelector('[data-save-trip]').addEventListener('click', () => {
