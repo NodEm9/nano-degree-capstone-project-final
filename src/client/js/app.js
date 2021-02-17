@@ -95,9 +95,9 @@ const linkData = (result) =>{
  },
 });
 result.then(data => {
- if(linkParams.result === undefined){
+ if(linkParams.result === undefined){      
 
-  console.log('update failed', result);
+  console.log( result);
 }else{
       return result.linkParams(data);
    }   
