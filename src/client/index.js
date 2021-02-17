@@ -3,11 +3,11 @@ import { handleSubmit, printBtn, deleteBtn } from './js/app';
 import { updateDaysCount } from './js/calcTrip';
 import { linkedinLink } from './js/social-media';
 
-// import { websiteImage } from './js/website-img';
-import 'regenerator-runtime/runtime';                    
- 
+import ('regenerator-runtime/runtime');                    
       
 import './styles/base.scss';
+
+ 
 
 document.querySelector('[data-submit-btn]').addEventListener('click', handleSubmit);  
 
