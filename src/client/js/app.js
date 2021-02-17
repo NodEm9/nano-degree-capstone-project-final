@@ -101,7 +101,7 @@ result.then(data => {
 }else{
       return result.linkParams(data);
    }   
- });
+ });  
 };  
 
 //Add eventListner to the get/retrieve button to retrieve stored data
