@@ -95,7 +95,7 @@ const linkData = (result) =>{
  },
 });
 result.then(data => {
- if(linkParams.result === undefined){      
+ if(linkParams.result === undefined){           
 
   console.log( result);
 }else{
@@ -108,12 +108,12 @@ result.then(data => {
 document.querySelector('[data-get-btn]').addEventListener('click', () => {
   let key = document.querySelector('[data-place-name]').value;
  
- 
+      
   localForage.getItem(key).then((inputText) => {
     console.log('getItem retrieved this', inputText);
     updateDisplay(inputText);  
   });
-}); 
+});   
          
 //Iterate over all stored data
 document.querySelector('[data-save-trip]').addEventListener('click', () => {
