@@ -18,7 +18,6 @@
 .details-box, .image-box{
     width: auto;
     height: auto;
-    margin-bottom: 0px;
 }
 
 .details-box, form {
@@ -81,7 +80,8 @@ form, h2 {
 label {
           font-size: 1rem;
           font-weight: bolder;
-          color: $default-color   
+          color: $baseDefault;
+          font-weight: bold;   
   }
 
 }
