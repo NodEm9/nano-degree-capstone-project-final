@@ -20,13 +20,11 @@ module.exports = {
               test: /\.js$/,
               exclude: /(node_modules|bower_components)/,
               use: {
-                 loader: 'babel-loader',
-                 options: {
-                  plugins: [
-                     '@babel/plugin-transform-runtime',
-                    ] , 
-              }
-          }
+                 loader: 'babel-loader'
+              //    options: {
+                 
+              // }
+          },
       },
       { 
           test: /\.scss$/i,
