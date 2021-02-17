@@ -16,8 +16,9 @@
 }
 
 .details-box, .image-box{
-    width: auto;
+    min-width: 50%;
     height: auto;
+    padding: 1rem;
 }
 
 .details-box, form {
