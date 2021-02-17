@@ -3,6 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const compression = require('compression');
 
+
 const dotenv = require('dotenv');
 dotenv.config();
 
@@ -14,7 +15,6 @@ app.use(compression());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// const axios = require('axios');
 
 //Middleware
 const cors = require('cors');
@@ -85,6 +85,7 @@ res.json(tripPlan);
 
 
 });
+
 
 app.get('/geonamesData', (req, res) => {
 console.log(req.body);
@@ -182,7 +183,7 @@ return data;
 
 
 
-// app.use('')
+
 // app.get('/test', (req, res) => {
 //           console.log(req.body);
 //           res.send(mockApiResponse);
