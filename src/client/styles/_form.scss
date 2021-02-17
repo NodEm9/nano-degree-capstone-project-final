@@ -179,7 +179,7 @@ input.getBtn:hover {
     border-radius: 5px;
     font-size: 0.8rem;
     font-weight: bolder;
-    border: none;
+    border: none;  
     outline: none;
     box-shadow: 4px 4px 4px rgba(0,0,0,.2);
 }
@@ -187,4 +187,4 @@ input.getBtn:hover {
 .save-trip:hover {
     background: $default-color;
     color: $baseDefault;
-}
+}   
