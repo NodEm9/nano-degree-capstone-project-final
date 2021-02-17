@@ -1,11 +1,15 @@
 const { default: fetch } = require('node-fetch');
 import { updateDaysCount } from './calcTrip';
 import {  isValidInput } from './inputsValidation';
+import ('regenerator-runtime/runtime');   
 
 import localForage from 'localforage';
 
 const form = document.querySelector('form');
 const infoData = document.querySelector('[data-infos]');
+
+
+
 
 
 const handleSubmit = async (event) => { 
@@ -26,8 +30,6 @@ if (localStorage.getItem(inputsArray)) {
 } else {
   inputsArray = [];
 }
-
-inputText.value = '';
 
 //Call updateDaysCount function from calcTrip.js
 updateDaysCount();         
@@ -53,7 +55,10 @@ if(isValidInput(inputText)){
 
       return localForage.getItem(inputText); 
     });
-    return data;
+
+    inputText.value = '';
+
+  return data;
 
   }).catch(err => {
     console.log({message: 'Update problem'} + err);
@@ -79,10 +84,13 @@ if(results === null) {
   });
  }     
 });
+  
  }else{
    console.log('Invalid: Enter a country or city as destination');  
 } 
 }; 
+
+
 
 //Get the return response        
 const linkData = (result) =>{ 
@@ -99,21 +107,24 @@ result.then(data => {
 
   console.log( result);
 }else{
-      return result.linkParams(data);
+      return result.linkParams(data);  
    }   
  });  
 };  
 
-//Add eventListner to the get/retrieve button to retrieve stored data
+
+
+  //Add eventListner to the get/retrieve button to retrieve stored data
 document.querySelector('[data-get-btn]').addEventListener('click', () => {
-  let key = document.querySelector('[data-place-name]').value;
- 
+    let key = document.querySelector('[data-place-name]').value;
+     
+    localForage.getItem(key).then((inputText) => {
+      console.log('getItem retrieved this', inputText);
+      updateDisplay(inputText);  
+  
+    });   
+  });
       
-  localForage.getItem(key).then((inputText) => {
-    console.log('getItem retrieved this', inputText);
-    updateDisplay(inputText);  
-  });  
-});      
          
 //Iterate over all stored data
 document.querySelector('[data-save-trip]').addEventListener('click', () => {
@@ -227,4 +238,4 @@ const deleteBtn = () => {
 
 
  
-export { handleSubmit, printBtn, deleteBtn };
+export { handleSubmit,  printBtn, deleteBtn };
