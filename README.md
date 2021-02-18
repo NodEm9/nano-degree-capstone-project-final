@@ -9,7 +9,7 @@
 **This** app was built using the following.
 
 # Getting Started
-You should be have nodejs and npm installed in your local machine, node actuall have npm packages install with it . Install [nodejs](https://nodejs.org/en/) . In total the app comprise the dependencies and APIs listed below,
+You should have nodejs and npm installed in your local machine, node actuall have npm packages install with it. Install [nodejs](https://nodejs.org/en/) . In total the app comprise the dependencies and APIs listed below,
 
 # Dependencies
 - nodejs
