@@ -24,6 +24,6 @@ Now to get started requirement should be having node and npm installed in your l
 
 Alse localForage was use to store and retrieve user data from indexDB locally.
 
-You can download each of APIs and dependencies here [Geoname][http://www.geonames.org/] , [weatherbit][https://www.weatherbit.io/account/create] to get Pixabay [here][https://pixabay.com/api/docs/] and for RESTCountries check [here][https://restcountries.eu/]
+You can get each of APIs and dependencies here [Geoname](http://www.geonames.org/) , (weatherbit](https://www.weatherbit.io/account/create)  to get Pixabay [here](https://pixabay.com/api/docs/) and for RESTCountries check [here](https://restcountries.eu/)
 
 
