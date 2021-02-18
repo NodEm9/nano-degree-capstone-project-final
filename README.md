@@ -4,7 +4,7 @@
  # Travel Planner Application.
  
  
- **T**his capstone app, is Travel apllication, which allow users `plan trip and print out the trip plan` ***The input section compise of start and end date and the once enter the app calculate the days interval between start and end and display the result***. The app uses APIs and webtools to enbale provide destination information to users.
+ **T**his app, is Travel application, which allow users `plan trip and print out the trip plan` ***The input section comprise of start and end date and once enter the app calculates the days interval between start and end and display the result***. It also give infomation about the distination country like `currency and other relevant info about the country` that might interest the user. The app uses APIs and web tools to enbale provide destination information to users.
  
 **This** app was built using the following.
 
