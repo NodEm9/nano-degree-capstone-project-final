@@ -1,7 +1,7 @@
 # nano-degree-capstone-project
  Udacity  Nano-degree Frontend Web development Capstone-Project
  
- # Travel Planner Appllication.
+ # Travel Planner Application.
  
  
  **T**his capstone app, is Travel apllication, which allow users `plan trip and print out the trip plan` ***The input section compise of start and end date and the once enter the app calculate the days interval between start and end and display the result***. The app uses APIs and webtools to enbale provide destination information to users.
