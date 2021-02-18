@@ -9,7 +9,7 @@
 **This** app was built using the following.
 
 # Getting Started
-Now to get started requirement should be having node and npm installed in your local machine. Install [nodejs][https://nodejs.org/en/] . In total the app is built with,
+Now to get started requirement should be having node and npm installed in your local machine. Install [nodejs](https://nodejs.org/en/) . In total the app is built with,
 
 - nodejs
 - express
