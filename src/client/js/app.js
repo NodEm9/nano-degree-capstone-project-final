@@ -41,10 +41,10 @@ if(isValidInput(inputText)){
   fetch('http://localhost:5000/createTrip', {
     method: 'POST',
     credentials: 'same-origin',
-    headers: {
+    headers: {     
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify(inputText),
+    body: JSON.stringify(inputText),  
 
   }).then(res => res.json())
   .then(data => {  
