@@ -24,7 +24,8 @@ body {
 
 h2 {
      text-align: center;
-     color: $tetiary-color;
+     color: $primary-color;
+     font-weight: 700;
 }
 
 main {
@@ -45,21 +46,31 @@ main {
      justify-content: space-around;
 
     .infos, h2 {
-     text-align: center;
-     color: $secondary-color;
+     color: $default-color;
+     font-weight: 700;
+     font-size: medium;
+     border-bottom: 1px solid;
+     border-right: none;
+     padding: 15px;
+     padding-bottom: 25px;
     }
     .infos, label {
          color: $baseDefault;
     }
+   
      .days-counter-timer{
-          background: linear-gradient(rgba(0, 38, 253, 0.864), rgba(0,36,250,0.8));
+          background: linear-gradient(
+               rgba(0, 38, 253, 0.864), 
+               rgba(0,36,250,0.8));
           margin: 1rem;
           padding: 1rem;
           border-radius: 0.8rem;
           box-shadow: 4px 4px 4px rgba(0,0,0,.2);
      }
       .destination-info  {
-          background: linear-gradient(rgba(0, 38, 253, 0.864), rgba(0,36,250,0.8));
+          background: linear-gradient(
+               rgba(0, 38, 253, 0.864), 
+               rgba(0,36,250,0.8));
           margin: 1rem;
           padding: 1rem;
           border-radius: 0.8rem;
@@ -72,7 +83,9 @@ main {
       }
 
       .weatherInfo {
-          background: linear-gradient(rgba(0, 38, 253, 0.864), rgba(0,36,250,0.8));
+          background: linear-gradient(
+               rgba(0, 38, 253, 0.864), 
+               rgba(0,36,250,0.8));
           margin: 1rem;
           padding: 1rem;
           border-radius: 0.8rem;
@@ -80,15 +93,22 @@ main {
           opacity: 5;
       }
  }
- 
+ .rest-countries-info .rest-title{
+     text-align: left;
+}
+
+.rest-title.i {
+     color: green; 
+}
 .api_logs{
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
      width: auto;
      text-align: center;
      margin: 1rem;
-     padding: 1rem;
+     padding: 1.5rem;
      font-size: 12px;
+     justify-content: space-between;
 
      &-item {
           text-align: center;
@@ -96,23 +116,40 @@ main {
      #geonames-logo{
           height: 100px;
           width: 150px;
-          background: url('../media/websites-logo/geonames-logo.png') center;
+          background: url(
+               '../media/websites-logo/geonames-logo.png') 
+               center;
           background-size: cover;
          
      }
      #weatherbit-logo{
-          background: url('../media/websites-logo/weatherbit-logo.png') center;
+          background: url(
+               '../media/websites-logo/weatherbit-logo.png') 
+               center;
           background-size: cover;
-          width: 160px;
-          min-height: 100px;
+          width: 150px;
+          min-height: 90px;
           margin-left: 1rem;
      }
+     #pixabay-logo {
+          background: url(
+               '../media/websites-logo/pixabay-log.png')
+                center;
+          background-size: cover;
+          width: 150px;
+          min-height: 110px;
+          margin-left: 1rem;
+          margin-top: 1rem;
+     }
      #restCountries-logo {
-          background: url('../media/websites-logo/RESTCountries.png') center;
+          background: url(
+               '../media/websites-logo/RESTCountries.png') 
+               center;
           background-size: cover;
           width: 150px;
           height: 100px;
-     } 
+          margin-left: 1rem;
+     }
      #udacity-logo {
           background: url('../media/websites-logo/Udacity_logo.png');
           background-size: cover;
@@ -141,7 +178,7 @@ main {
      }
      #gitHub {
           color: $baseDefault;
-     }
+     }       
      #facebook {
           color: $primary-color;
         
