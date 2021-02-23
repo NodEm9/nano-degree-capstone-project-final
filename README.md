@@ -30,5 +30,5 @@ You can get each of APIs here [Geoname](http://www.geonames.org/) , [weatherbit]
 
 
 
-Also localForage was use to store and retrieve user data from indexDB locally.
+Also localForage was use to store and retrieve user data from indexDB locally.  
 
